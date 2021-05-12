@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
-@media screen and (max-width: 600px){
-    #content,
-    aside {
-        width: 100%;
-        padding: 0;
-    }
-}
-
 * {
     box-sizing: border-box;
 }
@@ -16,6 +8,10 @@ body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+header {
+    display: inline;
 }
 
 main {
@@ -30,6 +26,8 @@ h2, h3 {
 nav {
     background-color: #4a503d;
     padding: 5px;
+    position: sticky;
+    top: 0
 }
 
 nav a {
@@ -98,3 +96,11 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
